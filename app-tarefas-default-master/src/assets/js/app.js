@@ -3,5 +3,3 @@ categoriaController.montar()
 
 const tarefaController = new TarefaController()
 tarefaController.listar("")
-
-

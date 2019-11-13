@@ -44,8 +44,13 @@ class TarefaView {
                 <img src="assets/images/blue.svg" alt="" class="mr-1">${tarefa.categoria} 
               </div>
             </div>
-            <div>
-              <a href="#"><img src="assets/images/delete.svg" alt=""></a>
+            <div class="flex-column">
+              <div>
+                <a href="#"><img onclick="tarefaController.deletar(${tarefa.id})" src="assets/images/delete.svg" alt=""></a>
+              </div>
+              <div class="mt-3">
+                <a href="#"><img src="assets/images/editar.svg" alt=""></a>
+              </div>
             </div>
           </section>
         `

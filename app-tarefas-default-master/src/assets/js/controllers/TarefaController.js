@@ -44,7 +44,10 @@ class TarefaController {
 
   }
 
-  deletar(){
-    
+  deletar(id ){
+    this._tarefaService.deletar(id)
+    .then( this._tarefas.deletar(id))
+    // Passa os dados para a View
+    .then(() => this._tarefaView.montarGrid(this._tarefas))
   }
 }
